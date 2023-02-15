@@ -1,0 +1,19 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Test action
+        uses: KaMeHb-UA/action-firebase-cloud-config@master
+        with:
+          config:
+            test-str: with-val1
+            test-arr:
+              - testv1
+              - testv2
