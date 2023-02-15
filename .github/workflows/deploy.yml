@@ -11,6 +11,8 @@ jobs:
     steps:
       - name: Test action
         uses: KaMeHb-UA/action-firebase-cloud-config@master
+        env:
+          config.my-test-env: sometestvalue
         with:
           config: |
             test-str: with-val1
