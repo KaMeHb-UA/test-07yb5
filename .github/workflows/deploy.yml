@@ -19,3 +19,4 @@ jobs:
             test-arr:
               - testv1
               - testv2
+              - ${my-test-env}
