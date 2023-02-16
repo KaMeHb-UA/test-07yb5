@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Test action
-        uses: KaMeHb-UA/action-firebase-cloud-config@main
+        uses: KaMeHb-UA/action-firebase-cloud-config@v0.0.1
         env:
           config.my-test-env: sometestvalue
         with:
